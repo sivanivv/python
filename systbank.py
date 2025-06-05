@@ -1,50 +1,80 @@
-print('a) Create new account \n','b) Deposit money \n','c) Withdraw money\n','d) Display account details \n ','e) Exit \n',)
+print('1) Create new account \n','2) Deposit money \n','3) Withdraw money\n','4) Display account details \n ','5) Exit \n',)
 
-option=int(input("What is your need? enter option : "))
 data={}
-
-while option!=exit:
-    option=int(input("What is your need? enter option : "))
+option=()
+while option!=5:
+    option=int(input("What is your need? enter your option : "))
     if (option==1):
-    
-        name=(input('Enter your name '))
-        acc=int(input('enter account number '))
-    
-        bal=int(input('enter initial balance '))
-        details={'name':'','account_no': '','balance':''}
-        
-        
+        details={}
+        name=str(input('Enter your name '))
         details['name']=name
 
-        if acc not in details and acc> 0:
+        acc=int(input('enter account number '))
+        
+        while  acc< 0 or acc in data :
+           
+              print("Enter valid account number!!")
+              acc=int(input('enter account number '))
+           
+        else:
             details['account_no']=acc
-        # if acc> 0:
-            # details['account_no']=acc
 
-        if bal>0:
+    
+        bal=int(input('enter initial balance '))
+        while bal<0:
+            print("Enter valid  amount!!")
+            bal=int(input('enter initial balance '))
+        else:
             details['balance']=bal
 
-        for i in acc:
-           
-           data[i]=details
-
+        data[acc]=details
         print(details)
-    # print(data)
-    elif option==2:
-       deposit=int(input("How much money do you want to deposit? "))
-       if deposit>0:
-          bal+=deposit
-          details['balance']=bal
-        #   print(details)
+
+
+    elif option == 2:
+        acc = int(input('Enter account number: '))
+        if acc in data:
+            deposit = int(input("How much money do you want to deposit? "))
+            data[acc]['balance']+=deposit
+            
+        else:
+            print("Account number not found !! Try again.")
+
+
     elif option==3: 
-       wd=int(input("How much money do you want to withdraw? "))
-       if wd>0 :
-          bal-=wd
-          details['balance']=bal
-        #   print(details)
+        acc = int(input('Enter account number: '))
+        if acc in data:
+            wthd = int(input("How much money do you want to withdraw? "))
+            data[acc]['balance']-=wthd
+
+        else:
+            print("Account number not found !! Try again.")
+
+
     elif option==4:
-       print(details) 
-    elif option==7:
-       print(data) 
+       acc = int(input('Enter account number: '))
+       if acc in data:
+           print("your account details: ",data[acc])
+    
+    elif option==5:
+        print("EXITED!!")
+
+    else:
+        print("INVALID OPTION!! TRY AGAIN")
+        
+          
+    # elif option==7:
+    #    print(data) 
     
     # print("invalid input : ")
+
+
+
+
+
+
+
+
+
+
+
