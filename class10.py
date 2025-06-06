@@ -252,11 +252,11 @@
 
 
 
-# n=5
-# for i in range(0,n):
-#     for j in range(0,i):
-#         if i==n or j==1 or j==i :
-#             print("* ",end="  " )
-#         else :
-#             print("  ",end="  ")
-#     print()
+n=5
+for i in range(0,n):
+    for j in range(0,i):
+        if i==n or j==1 or j==i :
+            print("* ",end="  " )
+        else :
+            print("  ",end="  ")
+    print()
