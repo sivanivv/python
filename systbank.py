@@ -37,11 +37,15 @@ while option!=5:
         acc = int(input('Enter account number: '))
         if acc in data:
             deposit = int(input("How much money do you want to deposit? :  "))
-            data[acc]['balance']+=deposit
+            if deposit>0:
+                data[acc]['balance']+=deposit
+                print("Your current balance : ",data[acc]['balance'])
+            else:
+                print("Enter valid amount!!Try again !!")
             
         else:
             print("Account number not found !! Try again.")
-        print("Your current balance : ",data[acc]['balance'])
+        
 
 
     elif option==3: 
@@ -49,9 +53,10 @@ while option!=5:
         if acc in data :
             wthd = int(input("How much money do you want to withdraw? : "))
             
-            if data[acc]['balance'] > wthd:
+            if data[acc]['balance'] < wthd or wthd>0:
                 data[acc]['balance']-=wthd
             else:
+                
                 print("Enter valid amount !! Try again")
 
         else:
@@ -62,12 +67,15 @@ while option!=5:
     elif option==4:
        acc = int(input('Enter account number : '))
        if acc in data:
-           print("your account details: ",data[acc])
+        print("your account details: ","Name: ",data[acc]['name'], "\n","Account number: ",data[acc]['account_no'], "\n","Balance: ",data[acc]['balance'])
+       else:
+           print("Account number not found !! Try again.")
+           
     
     elif option==5:
         print("EXITED!!")
     
-
+    
     else:
         print("INVALID OPTION!! TRY AGAIN")
         

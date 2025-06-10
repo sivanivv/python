@@ -118,7 +118,7 @@
 #------------------------------------------------------------------------------------------------------------------------------
 
 
-# # Right half pattern
+# Right half pattern
 # n=6
 # for i in range(0,n):
 #     for j in range(0,i):
@@ -178,7 +178,7 @@
 #     for k in range(n-i):
 #         print("* ",end="  " )
 #     print()
-#------------------------------------------ full pyramid
+#------------------------------------------ inverted pyramid
 
 
 
@@ -251,12 +251,84 @@
 
 
 
+# n=5
+# for i in range(0,n):
+#     for j in range(0,n-i):
+#         print(" ",end=" " )
+#     for k in range(i+1):
+#          if k==0 or k==i or  i==n-1 :
+#             print("* ",end="  " )
+#          else :
+#                 print("  ",end="  ")
+       
+#     print()
+#---------------------------------------------hollow pyramid
+
+
+
+
+# n=5
+# for i in range(0,n):
+#     for j in range(0,i+1):
+#         print(" ",end=" ")
+#     for k in range(0,n-i):
+#         if i==0 or k==0 or k==n-i-1:
+#           print("* ",end="  ")
+#         else:
+#              print(" ",end="   ") 
+#     print()
+#---------------------------------------------hollow inverted pyramid
+
+
+
+# n=5
+# for i in range(0,n):
+#     if i==n-1:
+#         break
+#     for j in range(0,n-i):
+#         print(" ",end=" " )
+#     for k in range(i+1):
+#          if k==0 or k==i or  i==n-1 :
+#             print("* ",end="  "   )
+#          else :
+#                 print(" ",end="   ")
+       
+#     print()
+# n=5
+# for i in range(0,n):
+#     if i==0:
+#         continue
+#     for j in range(0,i+1):
+#         print(" ",end=" ")
+#     for k in range(0,n-i):
+#         if i==0 or k==0 or k==n-i-1:
+#           print("* ",end="  ")
+#         else:
+#              print(" ",end="   ") 
+#     print()
+# ---------------------------------------------hollow inverted pyramid
+
+
+
+
+
+# n=5
+# c=1
+# for i in range(0,n):
+#     for j in range(0,i):
+#         print(c,end=" " )
+#         c+=1
+#     print()
+# ---------------------------------------------floyd's triangle
+
+
+
 
 n=5
+c=1
 for i in range(0,n):
-    for j in range(0,i):
-        if i==n or j==1 or j==i :
-            print("* ",end="  " )
-        else :
-            print("  ",end="  ")
+    for j in range(0,n-i):
+        print(" ",end=" " )
+    for k in range(i):
+        print(c,end="   " )
     print()
