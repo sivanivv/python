@@ -33,6 +33,8 @@ if option==1:
             title=(input("Enter title: "))
 
             if title in data[book_id]['title']:
+                print("Book already added!!")
+            else:
                 lib['Title']=title
             author=input("Enter Author name: ")
             lib['Author']=author
