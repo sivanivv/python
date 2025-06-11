@@ -11,15 +11,17 @@ while option!=5:
         name=str(input('Enter your name : '))
         details['name']=name
 
+
+
         acc=int(input('Enter your account number : '))
         
         while  acc< 0 or acc in data :
-           
               print("Enter valid account number!!")
               acc=int(input('Enter your account number '))
-           
         else:
             details['account_no']=acc
+
+
 
     
         bal=int(input('Enter initial balance : '))

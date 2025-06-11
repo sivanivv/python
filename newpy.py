@@ -1,7 +1,7 @@
-l1=['sivani','aiswarya','parvathy','nandhana']
-l2=[20,21,21,21]
-v=zip(l1,l2)
-print(dict(v))
+# l1=['sivani','aiswarya','parvathy','nandhana']
+# l2=[20,21,21,21]
+# v=zip(l1,l2)
+# print(dict(v))
 
 
 # l1=['sivani','aiswarya','parvathy','nandhana']
