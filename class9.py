@@ -83,12 +83,12 @@
 
 
 #8. Number of digits
-n=int(input("Enter the number : "))
-a=f"{n}"
-b=0
-for i in range(0,len(a)):
-    b+=int(a[i])
-print(b)
+# n=int(input("Enter the number : "))
+# a=f"{n}"
+# b=0
+# for i in range(0,len(a)):
+#     b+=int(a[i])
+# print(b)
     
     
 
