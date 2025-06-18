@@ -296,46 +296,46 @@
 
 #7. Create a menu-driven program using functions:a) Add two numbers b) Subtract two numbers c) Multiply two numbers d) Divide two numbers e) Exit (Use functions for each operation.)
 
-def add(e,n):
-    g=e+n
-    return g
-def sub(e,n):
-    g=e-n
-    return g
-def mul(e,n):
-    g=e*n
-    return g
-def div(e,n):
-    g=e/n
-    return g
+# def add(e,n):
+#     g=e+n
+#     return g
+# def sub(e,n):
+#     g=e-n
+#     return g
+# def mul(e,n):
+#     g=e*n
+#     return g
+# def div(e,n):
+#     g=e/n
+#     return g
 
-print(' 1.Addition\n','2.Subtraction\n','3.Multiplication\n','4.Division\n')
-op=()
-while op!=5:
-    op=int(input("Enter your option: "))
-    if op==1:
-        l=int(input("Enter First number: "))
-        ll=int(input("Enter second number: "))
-        print("Addition: ",add(l,ll))
-    elif op==2:
-        l=int(input("Enter First number: "))
-        ll=int(input("Enter second number: "))
-        print("Subtraction: ",sub(l,ll))
-    elif op==3:
-        l=int(input("Enter First number: "))
-        ll=int(input("Enter second number: "))
-        print("Multiplication: ",mul(l,ll))
-    elif op==4:
-        l=int(input("Enter First number: "))
-        ll=int(input("Enter second number: "))
-        if(ll==0):
-                print('canonot divide by zero!!')
-        else:
-            print("Division: ",div(l,ll))
-    elif op==5:
-        print("EXITED!!")
-    else:
-        print("Invalid option!! TRY AGAIN!!")
+# print(' 1.Addition\n','2.Subtraction\n','3.Multiplication\n','4.Division\n')
+# op=()
+# while op!=5:
+#     op=int(input("Enter your option: "))
+#     if op==1:
+#         l=int(input("Enter First number: "))
+#         ll=int(input("Enter second number: "))
+#         print("Addition: ",add(l,ll))
+#     elif op==2:
+#         l=int(input("Enter First number: "))
+#         ll=int(input("Enter second number: "))
+#         print("Subtraction: ",sub(l,ll))
+#     elif op==3:
+#         l=int(input("Enter First number: "))
+#         ll=int(input("Enter second number: "))
+#         print("Multiplication: ",mul(l,ll))
+#     elif op==4:
+#         l=int(input("Enter First number: "))
+#         ll=int(input("Enter second number: "))
+#         if(ll==0):
+#                 print('canonot divide by zero!!')
+#         else:
+#             print("Division: ",div(l,ll))
+#     elif op==5:
+#         print("EXITED!!")
+#     else:
+#         print("Invalid option!! TRY AGAIN!!")
 
 
 #--------------------------------------------------------------------
