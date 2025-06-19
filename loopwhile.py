@@ -324,11 +324,11 @@
 
 
 
-n=5
-c=1
-for i in range(0,n):
-    for j in range(0,n-i):
-        print(" ",end=" " )
-    for k in range(i):
-        print(c,end="   " )
-    print()
+# n=5
+# c=1
+# for i in range(0,n):
+#     for j in range(0,n-i):
+#         print(" ",end=" " )
+#     for k in range(i):
+#         print(c,end="   " )
+#     print()
