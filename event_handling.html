@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mouseover">mouseover</div> <br><br>
+
+    <form action="">
+        <input type="text" placeholder="type something..."> <br><br>
+    </form>
+
+    <button id="myButton"  style="background-color: #e0c491; color: rgb(15, 5, 5); padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;">button</button>
+    
+
+    </div>
+    <script>
+        const button=document.getElementById("myButton");
+        button.addEventListener("click",()=>alert("Button clicked!"));        //adding event listner
+
+        document.querySelector("button").addEventListener("click",()=>{
+            console.log("Button clicked");
+        })                                                                     // click event
+
+        document.querySelector("div").addEventListener("mouseover",()=>{
+            console.log("Mouse over!");                                        //mouse over event
+        });
+
+         document.querySelector("input").addEventListener("input",event=>{
+            console.log(event.target.value);
+        });
+
+    </script>
+</body>
+</html>
