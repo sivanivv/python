@@ -51,5 +51,33 @@
 // }
 //------------------------------------------------------
 
+//day_39
+
+// let fruits = ['Peach', 'Kiwi', 'Banana', 'Apple', 'Blueberry'];
+// for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i].length > 5) {
+//         console.log(fruits[i])
+//     }
+// }
 
 
+// let employee = [
+//     { name: 'Mary', age: 63 },
+//     { name: 'Supriya', age: 46 },
+//     { name: 'Harry', age: 27 },
+// ];
+// let a = employee[0];
+// for (let i = 0; i < employee.length; i++) {
+//     if (employee[i].age < a.age) {
+//         a = employee[i];
+//     }
+// }
+// console.log(a.name);
+
+//---------------------------------------------------------
+
+//day_40
+const button = document.getElementById("addButton"); 
+button.addEventListener("click", () => { const newItem = document.createElement("li");
+ newItem.innerText = "New Item"; 
+ document.querySelector("ul").appendChild(newItem); });
